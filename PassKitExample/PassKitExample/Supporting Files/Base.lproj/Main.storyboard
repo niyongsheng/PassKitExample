@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="log info ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Hu-RO-B8Z">
+                                <rect key="frame" x="15" y="159" width="363" height="464"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBL-4w-kOX">
+                                <rect key="frame" x="144" y="753" width="105.33333333333331" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Write Card"/>
+                                <connections>
+                                    <action selector="write:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Feh-bw-yCt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7Y-Qg-O6s">
+                                <rect key="frame" x="145" y="688" width="103" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scan Card"/>
+                                <connections>
+                                    <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BM-0p-D8E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-wl-EhS">
+                                <rect key="frame" x="30" y="638" width="64" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Clear"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XW1-rY-Ddd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iBL-4w-kOX" secondAttribute="bottom" constant="30" id="6Ll-zL-43h"/>
+                            <constraint firstItem="Q9i-wl-EhS" firstAttribute="top" secondItem="4Hu-RO-B8Z" secondAttribute="bottom" constant="15" id="CGm-Y7-1OA"/>
+                            <constraint firstItem="Q9i-wl-EhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DCK-os-6UC"/>
+                            <constraint firstItem="iBL-4w-kOX" firstAttribute="top" secondItem="B7Y-Qg-O6s" secondAttribute="bottom" constant="30" id="Do9-Jo-6h5"/>
+                            <constraint firstItem="4Hu-RO-B8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Ffw-wa-HrD"/>
+                            <constraint firstItem="B7Y-Qg-O6s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OKf-UY-6Kj"/>
+                            <constraint firstItem="4Hu-RO-B8Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="XCP-mH-505"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Hu-RO-B8Z" secondAttribute="trailing" constant="15" id="hrf-u2-66M"/>
+                            <constraint firstItem="iBL-4w-kOX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imO-bi-5sc"/>
+                            <constraint firstItem="B7Y-Qg-O6s" firstAttribute="top" secondItem="Q9i-wl-EhS" secondAttribute="bottom" constant="15" id="lYm-PL-5xu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="4Hu-RO-B8Z" id="GDY-yo-bPa"/>
+                        <outlet property="scanButton" destination="B7Y-Qg-O6s" id="Jkk-JG-y8h"/>
+                        <outlet property="writeButton" destination="iBL-4w-kOX" id="DHY-Zy-9wb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

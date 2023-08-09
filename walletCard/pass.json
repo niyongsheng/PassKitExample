@@ -1,0 +1,69 @@
+{
+    "formatVersion" : 1,
+    "passTypeIdentifier" : "pass.com.arpa.PassKitExample",
+    "serialNumber" : "b7f12eca9393405d8331e3085f53b8b9",
+    "webServiceURL" : "https://www.58arpa.com/passes/",
+    "authenticationToken" : "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+    "teamIdentifier" : "Y24AM9NS72",
+    "relevantDate" : "2025-01-01T00:00-00:00",
+    "foregroundColor": "rgb(2,2,4)",
+    "backgroundColor": "rgb(67,109,211)",
+    "locations" : [
+        {
+            "longitude" : 118.36353,
+            "latitude" : 35.11067
+        }
+    ],
+    "barcode" : {
+        "message" : "01070252",
+        "format" : "PKBarcodeFormatQR",
+        "messageEncoding" : "iso-8859-1"
+    },
+    "organizationName" : "Arpa",
+    "description" : "软件定义物流 数字改变生活",
+    "logoText" : "阿帕数字",
+    "storeCard": {
+        "headerFields": [
+            {
+                "key": "date",
+                "label": "",
+                "value": ""
+            }
+        ],
+        "secondaryFields": [
+            {
+                "key": "more",
+                "label": "姓名",
+                "value": "倪永胜"
+            },
+            {
+                "key": "more",
+                "label": "工号",
+                "value": "01070252"
+            },
+            {
+                "key": "more",
+                "label": "职位",
+                "value": "IOS开发工程师"
+            }
+        ],
+        "backFields": [
+            {
+                "key": "records",
+                "label": "Code",
+                "value": "https://github.com/niyongsheng/PassKitExample"
+            },
+            {
+                "key": "terms",
+                "label": "Rule",
+                "value": "仅限公司内部使用"
+            },
+            {
+                "key": "support",
+                "label": "技术支持",
+                "value": "NYS"
+            }
+        ]
+    },
+    "labelColor": "rgb(32,32,32)"
+}
